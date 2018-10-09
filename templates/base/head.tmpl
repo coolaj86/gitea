@@ -276,6 +276,9 @@
 							<a class="item{{if .PageIsSignIn}} active{{end}}" href="{{AppSubUrl}}/user/login?redirect_to={{.Link}}">
 								<i class="octicon octicon-sign-in"></i> {{.i18n.Tr "sign_in"}}
 							</a>
+							<a class="item" href="{{AppSubUrl}}/user/oauth2/GitHub?redirect_to={{.Link}}">
+								{{.i18n.Tr "sign_in_with"}} &nbsp;<i class="octicon octicon-mark-github"></i>
+							</a>
 						</div><!-- end anonymous right menu -->
 
 					{{end}}
