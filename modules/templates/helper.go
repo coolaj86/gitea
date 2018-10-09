@@ -60,6 +60,9 @@ func NewFuncMap() []template.FuncMap {
 		"DisableGravatar": func() bool {
 			return setting.DisableGravatar
 		},
+		"GoogleAnalyticsID": func() string {
+			return setting.GoogleAnalyticsID
+		},
 		"ShowFooterTemplateLoadTime": func() bool {
 			return setting.ShowFooterTemplateLoadTime
 		},
