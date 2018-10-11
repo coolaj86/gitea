@@ -1176,7 +1176,7 @@ func commonResetPassword(ctx *context.Context) *models.User {
 func ResetPasswd(ctx *context.Context) {
 	ctx.Data["IsResetForm"] = true
 
-	_ = commonResetPassword(ctx)
+	commonResetPassword(ctx)
 
 	ctx.HTML(200, tplResetPassword)
 }
