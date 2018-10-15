@@ -1144,7 +1144,7 @@ func ForgotPasswdPost(ctx *context.Context) {
 	ctx.HTML(200, tplForgotPassword)
 }
 
-// ResetPasswd render the reset password page
+// ResetPasswd render the account recovery page
 func ResetPasswd(ctx *context.Context) {
 	ctx.Data["Title"] = ctx.Tr("auth.reset_password")
 
@@ -1160,7 +1160,7 @@ func ResetPasswd(ctx *context.Context) {
 	ctx.HTML(200, tplResetPassword)
 }
 
-// ResetPasswdPost response from reset password request
+// ResetPasswdPost response from account recovery request
 func ResetPasswdPost(ctx *context.Context) {
 	ctx.Data["Title"] = ctx.Tr("auth.reset_password")
 
