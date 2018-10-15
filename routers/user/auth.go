@@ -1172,7 +1172,7 @@ func commonResetPassword(ctx *context.Context) *models.User {
 	return u
 }
 
-// ResetPasswd render the reset password page
+// ResetPasswd render the account recovery page
 func ResetPasswd(ctx *context.Context) {
 	ctx.Data["IsResetForm"] = true
 
@@ -1181,7 +1181,7 @@ func ResetPasswd(ctx *context.Context) {
 	ctx.HTML(200, tplResetPassword)
 }
 
-// ResetPasswdPost response from reset password request
+// ResetPasswdPost response from account recovery request
 func ResetPasswdPost(ctx *context.Context) {
 	u := commonResetPassword(ctx)
 
